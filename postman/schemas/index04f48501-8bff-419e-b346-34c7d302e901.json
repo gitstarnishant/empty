@@ -9,7 +9,7 @@
     "url" : "https://goftkvp41c.execute-api.us-east-1.amazonaws.com/{basePath}",
     "variables" : {
       "basePath" : {
-        "default" : "withou-auto"
+        "default" : "beta"
       }
     }
   } ],
@@ -27,23 +27,6 @@
         "responses" : {
           "default" : {
             "description" : "Default response for GET /user"
-          }
-        },
-        "x-amazon-apigateway-integration" : {
-          "payloadFormatVersion" : "2.0",
-          "type" : "aws_proxy",
-          "httpMethod" : "POST",
-          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:780401591112:function:Nishant-gateway-handler/invocations",
-          "connectionType" : "INTERNET"
-        }
-      }
-    },
-    "/users" : {
-      "get" : {
-        "operationId" : "listUser",
-        "responses" : {
-          "default" : {
-            "description" : "Default response for GET /users"
           }
         },
         "x-amazon-apigateway-integration" : {
